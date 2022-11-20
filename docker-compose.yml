@@ -1,0 +1,12 @@
+# docker-compose file
+
+version: '3'
+
+services:
+  nginx:
+    image: skeres95250/my-nginx-ssl:v1.0
+    container_name: my-nginx-ssl
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
